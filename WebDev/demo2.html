@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project C2 – Counter Cancer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+		<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+		<link rel="stylesheet" href="css/nouislider.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+  <div class="main-section">
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Counter Cancer</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	           <!--  	<li class="dropdown nav-item">
+              <a href="#" class="dropdown-toggle nav-link icon d-flex align-items-center" data-toggle="dropdown">
+                <i class="ion-ios-apps mr-2"></i>
+                Components
+                <b class="caret"></b>
+              </a>
+              <div class="dropdown-menu dropdown-menu-left">
+                <a href="#" class="dropdown-item"><i class="ion-ios-apps mr-2"></i> All Components</a>
+                <a href="#" class="dropdown-item"><i class="ion-ios-document mr-2"></i> Documentation</a>
+              </div>
+            </li> -->
+	       <!--   <li class="nav-item"><a href="#" class="nav-link icon d-flex align-items-center"><i class="icon-home mr-2"></i> Home</a></li> -->
+            <li class="nav-item"><a href="index.html" class="nav-link icon d-flex align-items-center">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link icon d-flex align-items-center">About</a></li>
+	          <li class="nav-item cta"><a href="#" class="nav-link icon d-flex align-items-center">Log In</a></li>
+	           <!--    <li class="nav-item"><a href="#" class="nav-link icon d-flex align-items-center"><i class="ion-logo-facebook"></i><span class="d-lg-none ml-2">Facebook</span></a></li>
+	          <li class="nav-item"><a href="#" class="nav-link icon d-flex align-items-center"><i class="ion-logo-twitter"></i><span class="d-lg-none ml-2">Twitter</span></a></li>
+	          <li class="nav-item"><a href="#" class="nav-link icon d-flex align-items-center"><i class="ion-logo-instagram"></i><span class="d-lg-none ml-2">Instagram</span></a></li> -->
+	        </ul>
+	      </div>
+		  </div>
+	  </nav>
+    <!-- END nav -->
+
+
+
+
+    <section id=section#2 class="hero-wrap js-fullheight" style="background-image: url(images/adipose.jpg);" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row description js-fullheight align-items-center justify-content-center">
+          <div class="col-md-8 text-center">
+            <div class="text">
+              <h1 class="mb-4"><span>Benign</span></h1>
+              <h4 class="mb-5 mt-2">VGG16 yields a diagnosis that is 85%+ accurate.</h4>
+              <section id=section#2 data-stellar-background-ratio="0.5">
+              <div class="designed d-inline-block">
+                <d class="d-flex align-items-center">
+            <!-- 				<div class="img" style="background-image: url(images/person.jpg);"></div> -->
+            <!-- 				<div class="ml-3"><p class="mb-0">Designed by: <span>Peter Mendelev</span></p></div> -->
+                </d>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- 			<div class="mouse">
+        <a href="#" class="mouse-icon rounded-circle bg-danger">
+          <div class="mouse-wheel"><span class="ion-ios-arrow-round-down text-light"></span></div>
+        </a>
+      </div> -->
+    </section>
+
+
+
+    <!-- 			<div class="mouse">
+        <a href="#" class="mouse-icon rounded-circle bg-danger">
+          <div class="mouse-wheel"><span class="ion-ios-arrow-round-down text-light"></span></div>
+        </a>
+      </div> -->
+
+	  <!-- - - - - -end- - - - -  -->
+
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-storage.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCjy0Fj-zEZTYzHGol0T1w3xNrVc8Qf97U",
+      authDomain: "counter-cancer.firebaseapp.com",
+      databaseURL: "https://counter-cancer.firebaseio.com",
+      projectId: "counter-cancer",
+      storageBucket: "counter-cancer.appspot.com",
+      messagingSenderId: "6664994166",
+      appId: "1:6664994166:web:bc7ab4ab6ec54f55c84e57",
+      measurementId: "G-1V6347HFD2"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+
+  // Initialize Firebase
+//  firebase.initializeApp(config);
+
+
+
+
+// const ref = firebase.storage().ref('counter-cancer/');
+// const file = document.querySelector('fileButton').files[0]
+// const name = (+new Date()) + '-' + file.name;
+// const metadata = {
+//   contentType: file.type
+// };
+// const task = ref.child(name).put(file, metadata);
+
+//task
+//  .then(snapshot => snapshot.ref.getDownloadURL())
+//  .then((url) => {
+//    console.log(url);
+//    document.querySelector('#someImageTagID').src = url;
+  //})
+  //.catch(console.error);
+
+//  task
+  //  .then(snapshot => snapshot.ref.getDownloadURL())
+  //  .then((url) => {
+  //     document.querySelector('#someImageTagID').src = url;
+  //  })
+
+
+
+
+
+  //  var fileButton = document.getElementById("fileButton");
+
+
+  //      const skinCancer1 = imageCollection['skincancer'];
+  //      const skinCancer2 = imageCollection['breastcancer'];
+  //      const skinCancer3 = imageCollection['colorectalcancer'];
+  //      let typeOfCancer = "";
+
+//    if(document.getElementById('skincancer').clicked && document.getElementById('goButton').clicked == true)
+//    {
+//       let typeOfCancer = "skincancer"
+//    };
+
+//  else if(document.getElementById('breastcancer').clicked && document.getElementById('goButton').clicked == true)
+  //  {
+  //      let typeOfCancer = "breastcancer"
+//    };
+
+//  else if(document.getElementByIs('colorectalcancer').clicked && document.getElementById('goButton').clicked == true)
+
+//    {
+//      let typeOfCancer = "colorectalcancer"
+//    };
+
+
+
+    // Upload file and metadata to the object 'images/mountains.jpg'
+//    var uploadTask = storageRef.child('images/' + file.name).put(fileButton, typeOfCancer);
+
+//    function() {
+      // Upload completed successfully, now we can get the download URL
+//      uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+//        console.log('File available at', downloadURL);
+//      });
+//    });
+
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-database.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/amruththesavior.js"></script>
+
+  <script src="js/nouislider.min.js"></script>
+  <script src="js/moment-with-locales.min.js"></script>
+  <script src="js/bootstrap-datetimepicker.min.js"></script>
+  <script src="js/main.js"></script>
+
+  </body>
+</html>
